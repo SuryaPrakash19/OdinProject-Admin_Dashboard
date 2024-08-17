@@ -84,11 +84,13 @@ li {
   padding: 0.5rem;
 }
 li:hover {
-  border: 1px solid blue;
+  border-bottom: 1px solid blue;
+  border-left: 1px solid blue;
+  transform: scale(1.05);
 }
 .main {
   display: grid;
-  grid-template-rows: 1fr 5fr;
+  grid-template-rows: 1fr 8fr;
 }
 
 .header {
@@ -247,7 +249,66 @@ button {
   height: 95%;
   margin-top: 10px;
   border-radius: 3%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
 }
-.announcement > p {
-  font-weight: smaller;
+.announcementsection > .acard > p {
+  font-size: small;
+
+  overflow-y: hidden;
+  text-overflow: ellipsis ellipsis;
+}
+.acard {
+  width: 80%;
+  margin: 15px 0;
+}
+.acard:hover {
+  border: 1px solid #d2d2d2;
+  border-radius: 5px;
+
+  background-color: #e2e8f0;
+}
+.line {
+  width: 80%;
+  align-self: center;
+  border-top: 1px solid #d2d2d2;
+}
+.trendingsection {
+  background-color: white;
+  height: 95%;
+  margin-top: 10px;
+  border-radius: 3%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.pic {
+  height: 3rem;
+  width: 3rem;
+  border: #f0b429 solid 1px;
+  border-radius: 100%;
+  &:hover {
+    border: 2px solid darkgoldenrod;
+  }
+}
+.account {
+  width: 80%;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 1rem;
+  padding: 10px;
+}
+.trending {
+  margin-bottom: 10px;
+}
+.handlename {
+  font-size: small;
+}
+.handle > h5:hover {
+  transform: scale(1.05);
+  border-bottom: 1px solid grey;
 }
