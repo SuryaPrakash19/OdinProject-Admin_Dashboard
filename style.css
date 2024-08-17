@@ -293,7 +293,12 @@ button {
   &:hover {
     border: 2px solid darkgoldenrod;
   }
+  & > img {
+    min-height: 3rem;
+    min-width: 3rem;
+  }
 }
+
 .account {
   width: 80%;
   display: flex;
